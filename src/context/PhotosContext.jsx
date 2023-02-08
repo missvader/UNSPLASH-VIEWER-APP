@@ -22,30 +22,16 @@ export const PhotosContextProvider = (props) => {
     .catch(() => {
       console.log("something went wrong!");
     })
-    
   }
   useEffect(() => {
-    /*api.photos
-      .getRandom({count:12})
-      .then(result => {
-        let arr = result.response;
-        console.log(result.response)
-      })
-      .catch(() => {
-        console.log("something went wrong!");
-      })*/
      getRandom(); 
-    
-      
-      
   }, []);
-  console.log("data =>", data)
   return (
     <PhotosContext.Provider value={{
-      data
+      data,
+      getRandom
     }}>
       {props.children}
     </PhotosContext.Provider> 
   )
-
 }

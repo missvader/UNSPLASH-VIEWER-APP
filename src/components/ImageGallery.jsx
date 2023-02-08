@@ -28,14 +28,10 @@ const ImageGallery = () => {
               subtitle = {item.user.name}
             />
           )
-
           )}
         </div>
       );
     }
-   
-  
-  
 };
 
 export default ImageGallery;

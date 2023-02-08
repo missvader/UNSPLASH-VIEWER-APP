@@ -1,5 +1,3 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios';
 import { PhotosContextProvider } from './context/PhotosContext';
 import Button from './components/Button';
 import ImageGallery from './components/ImageGallery';
@@ -14,7 +12,6 @@ function App() {
         <ImageGallery/>
       </div>
     </PhotosContextProvider>
-    
   )
 }
 
