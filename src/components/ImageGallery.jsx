@@ -3,7 +3,6 @@ import { useContext } from "react";
 import { PhotosContext } from "../context/PhotosContext";
 import Photo from "./Photo";
 
-
 const ImageGallery = () => {
   const {data} = useContext(PhotosContext);
   if (data === null) {
@@ -17,10 +16,20 @@ const ImageGallery = () => {
     ); 
     } else {
       return (
-        <div>
-          <ul>
-            
-          </ul>
+        <div
+          className="container-masonry"
+          >
+          {data.map(item => (
+            <Photo
+              key={item.id}
+              imageSource = {item.urls.regular}
+              alt = {item.alt_description}
+              title = {item.alt_description}
+              subtitle = {item.user.name}
+            />
+          )
+
+          )}
         </div>
       );
     }

@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/grid": "^1.12.0",
     "axios": "^1.3.2",
     "daisyui": "^2.50.0",
     "react": "^18.2.0",
