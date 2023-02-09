@@ -9,6 +9,8 @@
 - Tailwind.CSS
 - React Context
 
+## Code review
+[![CodeFactor](https://www.codefactor.io/repository/github/missvader/unsplash-viewer-app/badge)](https://www.codefactor.io/repository/github/missvader/unsplash-viewer-app)
 ## Installation
 
 ```shell
