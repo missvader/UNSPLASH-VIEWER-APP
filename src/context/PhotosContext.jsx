@@ -6,7 +6,7 @@ export const PhotosContext = createContext();
 
 export const PhotosContextProvider = (props) => {
   const [data, setData] = useState(null);
-  const API_KEY = import.meta.env.VITE_APP_API_KEY;
+  const API_KEY = nzzfPuH1I8avNf4UmVkuxF7WIsOZWrojpQ5GsrmPIWw;
   const api = createApi({
     accessKey: API_KEY
   })
